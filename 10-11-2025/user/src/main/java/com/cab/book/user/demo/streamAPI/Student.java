@@ -1,0 +1,86 @@
+package com.cab.book.user.demo.streamAPI;
+
+public class Student {
+
+        private int id;
+        private String firstName;
+        private String lastName;
+        private int age;
+        private String gender;
+        private String departmantName;
+        private int joinedYear;
+        private String city;
+        private int rank;
+
+        public int getId() {
+            return id;
+        }
+        public String getFirstName() {
+            return firstName;
+        }
+        public String getLastName() {
+            return lastName;
+        }
+        public int getAge() {
+            return age;
+        }
+        public String getGender() {
+            return gender;
+        }
+        public String getDepartmantName() {
+            return departmantName;
+        }
+        public int getJoinedYear() {
+            return joinedYear;
+        }
+        public String getCity() {
+            return city;
+        }
+        public int getRank() {
+            return rank;
+        }
+        public void setId(int id) {
+            this.id = id;
+        }
+        public void setFirstName(String firstName) {
+            this.firstName = firstName;
+        }
+        public void setLastName(String lastName) {
+            this.lastName = lastName;
+        }
+        public void setAge(int age) {
+            this.age = age;
+        }
+        public void setGender(String gender) {
+            this.gender = gender;
+        }
+        public void setDepartmantName(String departmantName) {
+            this.departmantName = departmantName;
+        }
+        public void setJoinedYear(int joinedYear) {
+            this.joinedYear = joinedYear;
+        }
+        public void setCity(String city) {
+            this.city = city;
+        }
+        public void setRank(int rank) {
+            this.rank = rank;
+        }
+        public Student(int id, String firstName, String lastName, int age, String gender, String departmantName,
+                       int joinedYear, String city, int rank) {
+            super();
+            this.id = id;
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.age = age;
+            this.gender = gender;
+            this.departmantName = departmantName;
+            this.joinedYear = joinedYear;
+            this.city = city;
+            this.rank = rank;
+        }
+        @Override
+        public String toString() {
+            return "Student [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", age=" + age	+ ", gender=" + gender + ", departmantName=" + departmantName + ", joinedYear=" + joinedYear + ", city=" + city + ", rank=" + rank + "]";
+        }
+}
