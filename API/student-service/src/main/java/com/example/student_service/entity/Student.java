@@ -1,4 +1,4 @@
-package com.example.university_monolithic.entity;
+package com.example.student_service.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -10,12 +10,10 @@ public class Student {
 
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private int id;
+    private int studentId;
     private String first_name;
     private String last_name;
     private String email;
-
-    @OneToOne
-    @JoinColumn(name = "address_id")
-    private Address address;
+    @Column(name = "address_id")
+    private int  addressId;
 }

@@ -1,5 +1,6 @@
 package com.cab.book.user.demo.streamAPI;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -20,23 +21,18 @@ public class Code1 {
                 new Student(10, "Shubham", "Pandey", 26, "Male", "Instrumentation Engineering", 2017, "Mumbai", 98)
         );
 
-//        Find Students Whose First Name Starts with 'A':
-
-        //Enhanced Switch Block
-        int var =1;
-        String output = switch (var){
-
-            case 1 -> "It contains 1";
-            default -> "It Contains Empty Value";
-        };
-//        System.out.println(output);
-
-        List<Student> studentNameA = studlist.stream().filter(s -> s.getFirstName()
-                .startsWith("A")).collect(Collectors.toList());
-        System.out.println("List of students whose name starts with letter A : "
-                + studentNameA);
-
-//        System.out.println(studlist);
+        ArrayList<Integer> l = new ArrayList<>();
+        l.add(5);
+        l.add(4);
+        l.add(10);
+        l.add(20);
+        System.out.println(l);
+        List<Integer> l2 = l.stream().map(num -> num+5)
+                .collect(Collectors.toList());
+        System.out.println(l2);
+        long count = l.stream().sorted().filter(num -> num<10)
+                        .count();
+        System.out.println(count);
     }
 
 }

@@ -1,5 +1,6 @@
-package com.example.university_monolithic.request;
+package com.example.student_service.request;
 
+import jakarta.persistence.Column;
 import lombok.Data;
 
 @Data
@@ -8,6 +9,5 @@ public class CreateStudentRequest {
     private String firstName;
     private String lastName;
     private String email;
-    private String street;
-    private String city;
+    private int addressId;
 }

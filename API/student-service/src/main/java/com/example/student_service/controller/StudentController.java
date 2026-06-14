@@ -1,8 +1,8 @@
-package com.example.university_monolithic.controller;
+package com.example.student_service.controller;
 
-import com.example.university_monolithic.request.CreateStudentRequest;
-import com.example.university_monolithic.response.StudentResponse;
-import com.example.university_monolithic.service.StudentService;
+import com.example.student_service.request.CreateStudentRequest;
+import com.example.student_service.response.StudentResponse;
+import com.example.student_service.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

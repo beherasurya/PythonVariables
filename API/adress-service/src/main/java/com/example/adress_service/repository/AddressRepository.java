@@ -1,6 +1,6 @@
-package com.example.university_monolithic.repository;
+package com.example.adress_service.repository;
 
-import com.example.university_monolithic.entity.Address;
+import com.example.adress_service.entity.Address;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
