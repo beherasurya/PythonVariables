@@ -1,0 +1,6 @@
+x = sumAll (20,120,34,10,5,21);
+
+function sumAll(){
+
+    let sum = 0;
+}
